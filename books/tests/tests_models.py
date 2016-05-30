@@ -26,4 +26,4 @@ class BookTest(TestCase):
         self.assertIsNone(self.book.date_reviewed)
         self.book.review = "My review"
         self.book.save()
-        self.assertIsNone(self.book.date_reviewed)
+        self.assertIsNotNone(self.book.date_reviewed)
